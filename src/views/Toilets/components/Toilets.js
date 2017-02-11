@@ -13,11 +13,24 @@ class Toilets extends Component {
       <div className="animated fadeIn">
         <div className="card">
           <div className="card-block">
+          <h4 className="card-title mb-0">Toilets</h4>
             <div className="row">
-              <div className="col-sm-5">
-                <h4 className="card-title mb-0">Toilets</h4>
-                { toilets && toilets.map(t=><ToiletItem key={t._id} id={t._id} token={t.token} active={t.active} status={t.status} />)}
-              </div>
+                { 
+                  toilets && toilets.map(t=>{
+                    return (
+                      <div className="col-sm-6">
+                        <ToiletItem
+                          key={t._id}
+                          id={t._id}
+                          token={t.token}
+                          active={t.active}
+                          status={t.status}
+                          title={t.title}
+                        />
+                      </div>
+                    )
+                  })
+                }
             </div>
           </div>
         </div>

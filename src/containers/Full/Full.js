@@ -6,6 +6,8 @@ import Footer from '../../components/Footer/';
 
 import Breadcrumbs from 'react-breadcrumbs';
 
+require('react-datepicker/dist/react-datepicker.css');
+
 class Full extends Component {
   render() {
     return (

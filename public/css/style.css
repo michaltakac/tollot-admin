@@ -2745,7 +2745,7 @@ header.navbar {
     margin-right: 0;
     padding: 0.5rem 1rem;
     background-color: #fff;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo_invert.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70px auto;
@@ -6355,7 +6355,7 @@ app-root {
 .sidebar {
   padding: 0;
   color: #fff;
-  background: #263238; }
+  background: #4ed173; }
   .sidebar .sidebar-close {
     position: absolute;
     right: 0;
@@ -6381,7 +6381,7 @@ app-root {
       margin-left: -10px;
       -webkit-appearance: none; }
     .sidebar .sidebar-nav::-webkit-scrollbar-track {
-      background-color: #304047;
+      background-color: #40ad5f;
       border-right: 1px solid #1c2429;
       border-left: 1px solid #1c2429; }
     .sidebar .sidebar-nav::-webkit-scrollbar-thumb {
@@ -6428,9 +6428,9 @@ app-root {
             color: #fff !important; }
         .sidebar ul.nav li.nav-item a.nav-link.active {
           color: #fff;
-          background: #304047; }
+          background: #3ba559; }
           .sidebar ul.nav li.nav-item a.nav-link.active i {
-            color: #20a8d8; }
+            color: #ffffff; }
         .sidebar ul.nav li.nav-item a.nav-link [class^="icon-"], .sidebar ul.nav li.nav-item a.nav-link [class*=" icon-"] {
           display: inline-block;
           margin-top: -4px;

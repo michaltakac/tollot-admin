@@ -1,6 +1,6 @@
 {
-  "name": "Analytics",
+  "name": "AnalyticsContainer",
   "version": "0.0.0",
   "private": true,
-  "main": "./Analytics.js"
+  "main": "./containers/AnalyticsContainer.js"
 }

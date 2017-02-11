@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - react
 - react-router
 - redux
-- redux-saga
+- redux-thunk
+- axios
 
 ###Demo
-[https://pmadar.github.io/AdminUI-starter](https://pmadar.github.io/AdminUI-starter)
+[http://toilito.com/](http://toilito.com/)

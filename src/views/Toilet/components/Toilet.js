@@ -4,7 +4,7 @@ import { ButtonToolbar, Button, Row, Col, FormGroup, ControlLabel, FormControl} 
 class Toilet extends Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
+    
     this.state = {
       alarmInterval: this.props.toilet.alarmInterval || '',
       waterUsage: this.props.toilet.waterUsage || '',
@@ -16,6 +16,7 @@ class Toilet extends Component {
     this.handleWaterUsageChange = this.handleWaterUsageChange.bind(this);
     this.handleWaterPriceChange = this.handleWaterPriceChange.bind(this);
     this.handleBannerUrlChange = this.handleBannerUrlChange.bind(this);
+    this.renderStatusColor = this.renderStatusColor.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   componentWillMount() {
@@ -24,8 +25,6 @@ class Toilet extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state);
-    console.log(this.props);
     /*this.setState = {
       alarmInterval: this.props.toilet.alarmInterval || '',
       waterUsage: this.props.toilet.waterUsage || '',
@@ -52,27 +51,27 @@ class Toilet extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log(this.state);
     this.props.setSettings(this.props.params.id, this.state);
+  }
+
+  renderStatusColor(status) {
+    return status ? 'green' : 'red';
   }
 
   render() {
     const { toilet } = this.props;
-    console.log(toilet);
     return (
       <div className="animated fadeIn">
         <div className="card">
           <div className="card-block">
             <Row>
               <Col sm={6}>
-                <h4 className="card-title mb-0">Toilet</h4>
+                <h4 className="card-title mb-0">Toilet - {toilet.title}</h4>
                 <div>
-                    Toilet ID: {toilet._id}<br />
-                    Toilet token: {toilet.token}<br />
-                    Active: {String(toilet.active)}<br />
-                    Status: {String(toilet.status)}<br />
+                    Active: <div style={{width: '10px', height: '10px', borderRadius: '10px', background: this.renderStatusColor(toilet.active), display: 'inline-block'}}></div><br />
+                    Status: <div style={{width: '10px', height: '10px', borderRadius: '10px', background: this.renderStatusColor(toilet.status), display: 'inline-block'}}></div><br />
                     Category ID: {String(toilet.categoryId)}<br />
-                    Banner: <img src={`${toilet.banner}`} alt={`${toilet.banner}`} /><br />
+                    Banner: <img src={`${toilet.banner}`} alt={`${toilet.banner}`} style={{maxWidth: '600px'}} /><br />
                 </div>
               </Col>
             </Row>

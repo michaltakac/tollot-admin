@@ -119,18 +119,21 @@ export function fetchSettings(token) {
 export function setSettings(token, data) {
   return function (dispatch) {
     dispatch(updateSettings())
-    return axios.put(`${apiUrl}wc/${token}`, {
-      banner: data.banner
-    }, {
+    return axios({
+      method: 'put',
+      url: `${apiUrl}wc/${token}`,
+      data: {
+        banner: data.banner
+      },
       headers: {
         'Content-Type': 'application/json',
         'X-Auth-Token': 'JCAiSjGefNprusgyRmtN51_CoQUutKOa9cPBu18kDCI'
       }
     })
     .then(response => {
-      console.log(response);
       const data = response.data.data;
       dispatch(updateSettingsSuccess(data));
+      window.location.reload()
     })
     .catch(error => dispatch(updateSettingsError(error)));
   };
