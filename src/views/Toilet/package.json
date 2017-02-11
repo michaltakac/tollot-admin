@@ -1,0 +1,6 @@
+{
+  "name": "ToiletContainer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./containers/ToiletContainer.js"
+}
