@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Dropdown, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Dropdown, DropdownMenu, DropdownItem } from 'reactstrap'
+import { Link } from 'react-router'
 
 class Header extends Component {
 
@@ -39,9 +40,9 @@ class Header extends Component {
           <li className="nav-item">
             <a className="nav-link navbar-toggler sidebar-toggler" onClick={this.sidebarToggle} href="#">&#9776;</a>
           </li>
-          <li className="nav-item px-1">
-            <a className="nav-link" href="#">Settings</a>
-          </li>
+          {/*<li className="nav-item px-1">
+            <Link className="nav-link" to="/settings">Settings</Link>
+          </li>*/}
         </ul>
         <ul className="nav navbar-nav ml-auto">
           {/*<li className="nav-item hidden-md-down">

@@ -39,7 +39,7 @@ function toiletsFetchSuccess(toilets) {
 export function fetchToilets() {
   return function (dispatch) {
     dispatch(requestToilets())
-    return fetch(`https://private-anon-3f7b6a1dbe-tollot.apiary-mock.com/wc`)
+    return fetch(`http://pluto.treecom.net:8088/wc`)
       .then(response => {
         if (response.status >= 400) {
           dispatch(toiletsFetchError("Bad response from server"));

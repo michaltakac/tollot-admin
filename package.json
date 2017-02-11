@@ -47,6 +47,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "chart.js": "^2.4.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.4.2",

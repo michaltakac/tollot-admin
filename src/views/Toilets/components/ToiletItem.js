@@ -10,10 +10,11 @@ const style = {
 const ToiletItem = (props) => {
     return (
         <div style={style}>
-            Toilet ID: {props.token}<br />
+            Toilet ID: {props.id}<br />
+            Toilet token: {props.token}<br />
             Active: {String(props.active)}<br />
             Status: {String(props.status)}<br />
-            <Link to={`/toilets/${props.token}`}>Edit</Link>
+            <Link to={`/toilets/${props.id}`}>Settings</Link>
         </div>
     );
 };

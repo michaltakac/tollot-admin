@@ -8,6 +8,7 @@ import Simple from './containers/Simple/'
 import Analytics from './views/Analytics/'
 import Toilets from './views/Toilets/'
 import Toilet from './views/Toilet/'
+import Settings from './views/Settings/'
 
 import Login from './views/Pages/Login/'
 import Register from './views/Pages/Register/'
@@ -21,6 +22,7 @@ export default (
       <Route path="toilets" name="Toilets" component={Toilets}/>
       <Route path="toilets/:id" name="Toilet" component={Toilet}/>
       <Route path="analytics" name="Analytics" component={Analytics}/>
+      <Route path="settings" name="Settings" component={Settings}/>
     </Route>
     <Route path="pages/" name="Pages" component={Simple}>
       <IndexRoute component={Page404}/>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { ButtonToolbar, Button, Row, Col, FormGroup, ControlLabel, FormControl} from 'react-bootstrap'
 
-class Toilet extends Component {
+class Settings extends Component {
   componentDidMount() {
-    this.props.fetchToilet(this.props.params.id)
+    this.props.fetchSettings(this.props.params.id)
     console.log(this.props);
   }
   render() {
@@ -47,4 +47,4 @@ class Toilet extends Component {
   }
 }
 
-export default Toilet
+export default Settings

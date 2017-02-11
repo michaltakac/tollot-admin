@@ -1,5 +1,5 @@
 const initialState = {
-  settings: []
+  settings: ''
 };
 
 const toiletReducer = (state = initialState, action) => {

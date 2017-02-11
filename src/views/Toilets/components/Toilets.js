@@ -16,7 +16,7 @@ class Toilets extends Component {
             <div className="row">
               <div className="col-sm-5">
                 <h4 className="card-title mb-0">Toilets</h4>
-                { toilets && toilets.map(t=><ToiletItem key={t.token} token={t.token} active={t.active} status={t.status} />)}
+                { toilets && toilets.map(t=><ToiletItem key={t._id} id={t._id} token={t.token} active={t.active} status={t.status} />)}
               </div>
             </div>
           </div>
