@@ -3184,10 +3184,17 @@ header.navbar {
   border-bottom: 1px solid #cfd8dc; }
 
 @media (min-width: 576px) {
+  .card-columns.cols-1 {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
   .card-columns.cols-2 {
     -moz-column-count: 2;
     -webkit-column-count: 2;
-    column-count: 2; } }
+    column-count: 2;
+  }
+}
 
 .card.drag, .card .drag {
   cursor: move; }
@@ -6423,7 +6430,7 @@ app-root {
         background: transparent; }
         .sidebar ul.nav li.nav-item a.nav-link:hover {
           color: #fff !important;
-          background: #20a8d8 !important; }
+          background: #4cbf6d !important; }
           .sidebar ul.nav li.nav-item a.nav-link:hover i {
             color: #fff !important; }
         .sidebar ul.nav li.nav-item a.nav-link.active {

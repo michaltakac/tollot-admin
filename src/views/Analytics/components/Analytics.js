@@ -73,7 +73,7 @@ class Analytics extends Component {
           selected={this.state.endDate}
           onChange={this.handleEndDateChange} 
         />
-        <div className="card-columns cols-2">
+        <div className="card-columns cols-1">
           {/*<div className="card">
             <div className="card-header">
               Line Chart
